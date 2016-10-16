@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.atuldwivedi.learnjdbc.util.Cleanup;
+import com.atuldwivedi.learnjdbc.util.ReleaseResources;
 import com.atuldwivedi.learnjdbc.util.connection.ConnectionFactory;
 
 public class LearnPreparedStatement {
@@ -17,8 +17,7 @@ public class LearnPreparedStatement {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			con = ConnectionFactory.getConnecction();
-			PreparedStatement stmt = con
-					.prepareStatement("INSERT INTO LOGIN VALUES(?, ?)");
+			PreparedStatement stmt = con.prepareStatement("INSERT INTO LOGIN VALUES(?, ?)");
 
 			do {
 				System.out.print("enter user name:");
@@ -50,7 +49,7 @@ public class LearnPreparedStatement {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-			Cleanup.closeConnection(con);
+			ReleaseResources.closeConnection(con);
 		}
 
 	}

@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.atuldwivedi.learnjdbc.util.Cleanup;
+import com.atuldwivedi.learnjdbc.util.ReleaseResources;
 import com.atuldwivedi.learnjdbc.util.connection.ConnectionFactory;
 
 /**
@@ -51,9 +51,9 @@ public class LearnStatement {
 			e.printStackTrace();
 		}
 		finally{
-			Cleanup.closeResultSet(rs);
-			Cleanup.closeStatement(stmt);
-			Cleanup.closeConnection(con);
+			ReleaseResources.closeResultSet(rs);
+			ReleaseResources.closeStatement(stmt);
+			ReleaseResources.closeConnection(con);
 		}
 	}
 }

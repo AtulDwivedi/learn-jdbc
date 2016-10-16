@@ -18,7 +18,7 @@ public class ConnectionFactory {
 			SQLException {
 		if (con == null) {
 			ResourceBundle resourceBundle = ResourceBundle.getBundle(
-					"com//atuldwivedi//learnjdbc//connection//db", Locale.US);
+					"com//atuldwivedi//learnjdbc//util//connection//db", Locale.US);
 			Class.forName(resourceBundle.getString("className"));
 			con = DriverManager.getConnection(resourceBundle.getString("url"),
 					resourceBundle.getString("userName"),

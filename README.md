@@ -12,8 +12,32 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Good to have
 If you wanna speed up all the process and want up-to-date with all changes. Follow the below steps
+
 * Join [GitHub](https://github.com/join), watch and star the [LearnJDBC](https://github.com/AtulDwivedi/LearnJDBC) project  
 * Download and install [Git](https://git-scm.com/downloads)
 * Download and install [TortoiseGit](https://tortoisegit.org/download/)
+
+### How to run Hello world JDBC program
+After installing all mentioned softwares, you can follow the below steps to get [HelloWorldJDBC.java](https://github.com/AtulDwivedi/LearnJDBC/blob/master/src/com/atuldwivedi/learnjdbc/basic/HelloWorldJDBC.java) program run.
+
+1. Copy https://github.com/AtulDwivedi/LearnJDBC.git URL
+2. Launch the eclipse
+3. Go to eclipss workspace folder, right click and click Git Clone, paste the copied URL in URL field, click Ok
+4. Copy project name i.e. LearnJDBC
+5. Open Eclips, 
+  * Click File -> New -> Others
+  * Type Java Project in Wizards text box
+  * Select Java Project, click Next
+  * Paste copied project name in Project Name text box
+  * Select Use default JRE radio button
+  * Click Next, Click Finish
+6. Click on newly created project, right click, click Refresh
+7. Click on LearnJDBC project, right click, click Build Path -> Configure Build Path...
+8. Click Libraries, click Add External JARs..
+9. Navigate to H2 installation directory and go inside h2\bin
+10. Select Executable Jar File, click Open
+11. Click Ok
+12. Open HelloWorldJDBC.java file in eclipse
+13. Right click in file, Run As -> Java Application
 
 

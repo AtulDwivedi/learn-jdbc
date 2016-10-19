@@ -17,15 +17,15 @@ If you wanna speed up all the process and want up-to-date with all changes. Foll
 * Download and install [Git](https://git-scm.com/downloads)
 * Download and install [TortoiseGit](https://tortoisegit.org/download/)
 
-### How to run Hello world JDBC program
+### How to run Hello world JDBC program?
 After installing all mentioned softwares, you can follow the below steps to get [HelloWorldJDBC.java](https://github.com/AtulDwivedi/LearnJDBC/blob/master/src/com/atuldwivedi/learnjdbc/basic/HelloWorldJDBC.java) program run.
 
 1. Copy https://github.com/AtulDwivedi/LearnJDBC.git URL
 2. Launch the eclipse
 3. Go to eclipss workspace folder, right click and click Git Clone, paste the copied URL in URL field, click Ok
 4. Copy project name i.e. LearnJDBC
-5. Open Eclips, 
-  * Click File -> New -> Others
+5. Create new **LearnJDBC** project in Eclipse
+  * Open Eclipse click File -> New -> Others
   * Type Java Project in Wizards text box
   * Select Java Project, click Next
   * Paste copied project name in Project Name text box

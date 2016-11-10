@@ -22,7 +22,7 @@ public class SattingAndRollingBackToSavepoints {
 		Statement getPrice = null;
 		Statement updatePrice = null;
 		ResultSet rs = null;
-		String query = "SELECT COF_NAME, PRICE FROM COFFEES "
+		String query = "SELECT COF_NAME, PRICE FROM LEARNJDBC_COFFEE "
 				+ "WHERE COF_NAME = '" + coffeeName + "'";
 
 		try {
@@ -47,7 +47,7 @@ public class SattingAndRollingBackToSavepoints {
 
 				System.out.println("Performing update...");
 
-				updatePrice.executeUpdate("UPDATE COFFEES SET PRICE = "
+				updatePrice.executeUpdate("UPDATE LEARNJDBC_COFFEE SET PRICE = "
 						+ newPrice + " WHERE COF_NAME = '" + coffeeName + "'");
 
 				System.out.println("\nCOFFEES table after " + "update:");

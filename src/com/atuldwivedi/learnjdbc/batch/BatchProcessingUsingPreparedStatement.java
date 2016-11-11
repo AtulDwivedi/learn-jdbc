@@ -1,4 +1,4 @@
-package com.atuldwivedi.learnjdbc.using.batchprocessing;
+package com.atuldwivedi.learnjdbc.batch;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.atuldwivedi.learnjdbc.using.transactions;
+package com.atuldwivedi.learnjdbc.transaction;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

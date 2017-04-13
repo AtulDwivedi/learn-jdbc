@@ -3,6 +3,7 @@ package com.atuldwivedi.learnjdbc.basic;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.atuldwivedi.learnjdbc.util.ReleaseResources;
@@ -27,6 +28,11 @@ public class LearnDatabaseMetaData {
 					+ dbmd.getDatabaseProductName());
 			System.out.println("Database Product Version: "
 					+ dbmd.getDatabaseProductVersion());
+			
+			ResultSet rs = dbmd.getTables(null, null, "%", null);
+			while (rs.next()) {
+			  System.out.println(rs.getString(3));
+			}
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
